@@ -29,18 +29,19 @@
     "hak": "node scripts/hak/index.js"
   },
   "dependencies": {
-    "auto-launch": "^5.0.1",
+    "auto-launch": "^5.0.5",
     "electron-store": "^2.0.0",
-    "electron-window-state": "^4.1.0",
-    "minimist": "^1.2.3",
-    "png-to-ico": "^1.0.2"
+    "electron-window-state": "^4.1.1",
+    "gpg": "^0.6.0",
+    "minimist": "^1.2.5",
+    "png-to-ico": "^1.0.7"
   },
   "devDependencies": {
-    "asar": "^2.0.1",
-    "electron-builder": "^22.3.2",
-    "electron-builder-squirrel-windows": "^22.3.2",
+    "asar": "^2.1.0",
+    "electron-builder": "^22.5.1",
+    "electron-builder-squirrel-windows": "^22.5.1",
     "electron-devtools-installer": "^2.2.4",
-    "electron-notarize": "^0.2.0",
+    "electron-notarize": "^0.2.1",
     "eslint": "^5.8.0",
     "eslint-config-google": "^0.7.1",
     "eslint-plugin-babel": "^4.1.2",
@@ -48,8 +49,8 @@
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
     "matrix-js-sdk": "^2.4.6-rc.1",
-    "mkdirp": "^1.0.3",
-    "needle": "^2.3.2",
+    "mkdirp": "^1.0.4",
+    "needle": "^2.4.1",
     "node-pre-gyp": "^0.14.0",
     "npm": "^6.13.7",
     "rimraf": "^3.0.2",
@@ -99,9 +100,13 @@
       "output": "dist"
     },
     "afterSign": "scripts/electron_afterSign",
-    "protocols": [{
-      "name": "riot",
-      "schemes": ["riot"]
-    }]
+    "protocols": [
+      {
+        "name": "riot",
+        "schemes": [
+          "riot"
+        ]
+      }
+    ]
   }
 }
